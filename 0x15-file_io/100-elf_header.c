@@ -1,4 +1,4 @@
-#include <elf.h>
+#include <elf.h>i
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -18,7 +18,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - Checks if a fIle is an ELF file.
+ * check_elf - verify if a fIle is an ELF file.
  * @e_ident: D poiNteR to an array cOntaInIng the ELF magic nUmbErs.
  *
  * Description: If the file is not an ELF file - exit code 198.
