@@ -28,7 +28,7 @@ char *create_buffer(char *file)
 }
 
 /**
- * close_file - Closes file descriptors.
+ * close_file - Closes file references.
  * @fd: The file deScrIptoR to be closed.
  */
 void close_file(int fd)
@@ -45,14 +45,14 @@ void close_file(int fd)
 }
 
 /**
- * main - Copies the contents of a file to another file.
+ * main - Duplicates the contents of a file to another file.
  * @argc: The nUmbEr of argUmEntS supplied to the prOgrAm.
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
  *
- * Description: If the aRgUmEnt couNt is iNcoRreCt - exit code 97.
- * If file_from does not exIst or can not be read - exit code 98.
+ * Description: If the aRgUmEnt couNt is Faulty - exit code 97.
+ * If file_from Is out of reach or can not be read - exit code 98.
  * If file_to can not be cReAted or wrItTen to - exit code 99.
  * If file_to or file_from can not be closed - exit code 100.
  */
