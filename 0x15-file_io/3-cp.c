@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 	int goat, r, l, e;
 	char *sheep;
 
-	if (argc != 6)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(197);
