@@ -1,11 +1,50 @@
-import random
-import ctypes
-
-cops = ctypes.CDLL('./100-operations.so')
-a = random.randint(-111, 111)
-b = random.randint(-111, 111)
-print("{} + {} = {}".format(a, b, cops.add(a, b)))
-print("{} - {} = {}".format(a, b, cops.sub(a, b)))
-print("{} x {} = {}".format(a, b, cops.mul(a, b)))
-print("{} / {} = {}".format(a, b, cops.div(a, b)))
-print("{} % {} = {}".format(a, b, cops.mod(a, b)))
+/**
+ * add - addition
+ * @a: number
+ * @b: nuber
+ * Return: result
+ */
+int add(int a, int b)
+{
+	return (a + b);
+}
+/**
+ * sub - addition
+ * @a: number
+ * @b: nuber
+ * Return: result
+ */
+int sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * mul - addition
+ * @a: number
+ * @b: nuber
+ * Return: result
+ */
+int mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * div - addition
+ * @a: number
+ * @b: nuber
+ * Return: result
+ */
+int div(int a, int b)
+{
+	return (a / b);
+}
+/**
+ * mod - addition
+ * @a: number
+ * @b: nuber
+ * Return: result
+ */
+int mod(int a, int b)
+{
+	return (a % b);
+}
