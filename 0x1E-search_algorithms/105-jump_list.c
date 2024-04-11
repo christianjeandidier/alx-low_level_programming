@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include "jump_list"
 
 /**
  * jump_list - searches for a value in a sorted list of integers
